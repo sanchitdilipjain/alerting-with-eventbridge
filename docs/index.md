@@ -71,10 +71,10 @@
 
     4. Targets: SNS topic - Topic: demo-tutorial
 
-     <img src="images/image14.png" class="inline"/>
-
+       <img src="images/image14.png" class="inline"/>
+    
     5. Click Create and you will find the rule configured.
 
-     <img src="images/image15.png" class="inline"/>
+       <img src="images/image15.png" class="inline"/>
 
-     <img src="images/image16.png" class="inline"/>
+       <img src="images/image16.png" class="inline"/>
