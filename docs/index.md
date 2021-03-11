@@ -84,15 +84,15 @@
 
     1. Navigate to IAM console 
 
-    <img src="images/image17.png" class="inline"/>
+        <img src="images/image17.png" class="inline"/>
     
     2. Select User in the left pane
 
-       <img src="images/image18.png" class="inline"/>
+        <img src="images/image18.png" class="inline"/>
 
     3. Click on Add user 
 
-    <img src="images/image19.png" class="inline"/>
+        <img src="images/image19.png" class="inline"/>
 
     4. Provide the below details for the user:
 
@@ -101,7 +101,7 @@
         - Console password: Autogeneratted password
         - Requrie password reset: Check the checkbox
 
-    <img src="images/image20.png" class="inline"/>
+        <img src="images/image20.png" class="inline"/>
 
     4. Select Next: Permissions
 
@@ -110,17 +110,17 @@
         - Attach existing policies directly
         - Check the checkbox for the AdministratorAccess policy
 
-    <img src="images/image21.png" class="inline"/>
+        <img src="images/image21.png" class="inline"/>
 
     6. Select on Next: Tags.
 
     7. Select Next: Review on the Add tags page.
     
-     <img src="images/image22.png" class="inline"/>
+        <img src="images/image22.png" class="inline"/>
 
     8. Select Create user and Close
 
-    <img src="images/image23.png" class="inline"/>
+        <img src="images/image23.png" class="inline"/>
 
     After the user is registered and the policy is attached, the CloudWatch Event will be triggered and an e-mail will be sent to the e-mail address defined in the SNS topic.
 
