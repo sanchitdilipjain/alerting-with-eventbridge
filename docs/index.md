@@ -1,20 +1,19 @@
 ## Alerts with Amazon EventBridge
 
 **Introduction**
-- EventBridge reduces the process of constructing an event-driven platform. EventBridge, decouple the destination from the source of the event, and this way you can refine and publish directly to EventBridge. There is no configuration needed. Improve developer agility as well as application resiliency with decoupled event-based architectures.
-- EventBridge bridge applications based on events. An event is an alert that a system’s state has changed. Customers can set up the own AWS applications with microservices, SaaS applications, and custom applications as event sources that publish events to an event bus. You can state a filtering rule to refine events and target events to AWS services and API destinations (via HTTP endpoint). 
-- EventBridge schema registry persist schema produced by your applications, AWS services, or SaaS applications which contains information like the title, format, and validation rules for event data. You can download code bindings for any schema in the registry in your IDE and directly use the strongly-typed object representing the event in your code
+- EventBridge bridges your application based on events. You can plug your own AWS platform with REST API, any SaaS applications, and custom apps as event sources that publish events to an event bus. You can state a filtering rule to refine events and target events to different services and REST endpoint destinations.
+- EventBridge reduces the process of constructing an event-driven platform. EventBridge, decouple the destination from the source of the event, and this way you can refine and notify directly to EventBridge. There is no configuration needed. 
 
 **Tutorial**
-- This tutorial, will leverage Amazon EventBridge to track and notify when an IAM policy is attached to an IAM user. The EventBridge Rule configured will track for a specific event name in CloudTrail, and will use an SNS message to notify regarding and event, when it occurs.
+- This tutorial, will leverage Amazon EventBridge to track and notify when an IAM policy is attached to an IAM user. The EventBridge Rule configured will track for a specific event name in CloudTrail, and will use an SNS message to notify regarding an event, when it occurs.
 
-- Step 1: Deploy SNS and register an email based Subscription 
+- Step 1: Deploy SNS and register an email-based Subscription 
 
     1. Navigate to Amazon SNS  
 
        <img src="images/image1.png" class="inline"/>
 
-    2. On the right side provide topic name and click Next step
+    2. On the right side provide the topic name and click Next step
 
        <img src="images/image2.png" class="inline"/>
 
@@ -26,11 +25,11 @@
 
         <img src="images/image4.png" class="inline"/>
 
-    5. Next let's register subscription under SNS topic created above, Select Create Subscription
+    5. Next let's register subscription under the SNS topic created above, Select Create Subscription
 
         <img src="images/image5.png" class="inline"/>
 
-    6. Select Email as option from Protocol drop down list and provide your email address 
+    6. Select Email as an option from Protocol drop-down list and provide your email address 
 
          <img src="images/image6.png" class="inline"/>
 
@@ -38,7 +37,7 @@
 
          <img src="images/image7.png" class="inline"/>
 
-    8. Post that confirm your subscription via subscription email you would have received on the email-id provided in the Step 6
+    8. Post that confirms your subscription via subscription email you would have received on the email id provided in Step 6
 
         <img src="images/image8.png" class="inline"/>
 
@@ -51,7 +50,7 @@
 
        <img src="images/image10.png" class="inline"/>
 
-    2. Select Rules in the left pane or Select Create rule button on the right side from Amazon EventBridge home screen
+    2. Select Rules in the left pane or Select Create rule button on the right side from the Amazon EventBridge home screen
 
        <img src="images/image11.png" class="inline"/>
 
