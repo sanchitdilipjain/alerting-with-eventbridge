@@ -79,6 +79,7 @@
        <img src="images/image16.png" class="inline"/>
 
 - Step 3: Generate AttachUserPolicy Notification
+    
     In this step we will create an IAM user and attach a user policy to this user to generate the notification
 
     1. Navigate to IAM console 
